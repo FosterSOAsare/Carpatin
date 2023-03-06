@@ -1,17 +1,18 @@
-import { createContext, useState, useContext } from "react";
-import { darkTheme } from "../theme";
-import { lightTheme } from "../theme";
+import { createContext, useState, useContext, useEffect } from "react";
 
 const DarkContext = createContext();
 
 const DarkProvider = ({ children }) => {
-	const [theme, setTheme] = useState("dark");
+	const [theme, setTheme] = useState(localStorage.getItem("carpatin:theme") || "light");
 
 	function toggleTheme() {
 		setTheme(theme === "dark" ? "light" : "dark");
 	}
 
-	return <DarkContext.Provider value={{ theme: theme === "light" ? lightTheme : darkTheme, setTheme, toggleTheme }}>{children}</DarkContext.Provider>;
+	useEffect(() => {
+		localStorage.setItem("carpatin:theme", theme);
+	}, [theme]);
+	return <DarkContext.Provider value={{ theme, setTheme, toggleTheme }}>{children}</DarkContext.Provider>;
 };
 
 export function useThemeContext() {
