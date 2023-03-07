@@ -1,18 +1,36 @@
-import { createContext, useState, useContext, useEffect } from "react";
+import { createContext, useState, useContext, useEffect, useMemo } from "react";
+import { createTheme } from "@mui/material";
+import { lightColors, darkColors } from "../theme";
 
 const DarkContext = createContext();
 
 const DarkProvider = ({ children }) => {
-	const [theme, setTheme] = useState(localStorage.getItem("carpatin:theme") || "light");
+	const [mode, setMode] = useState(localStorage.getItem("carpatin:theme") || "light");
+
+	const theme = useMemo(() => {
+		return createTheme({
+			mode,
+			palette: mode === "light" ? lightColors : darkColors,
+			breakpoints: {
+				values: {
+					xs: 0, // extra small devices (portrait phones)
+					sm: 600, // small devices (landscape phones)
+					md: 960, // medium devices (tablets)
+					lg: 1280, // large devices (desktops)
+					xl: 1920, // extra large devices (large desktops)
+				},
+			},
+		});
+	}, [mode]);
 
 	function toggleTheme() {
-		setTheme(theme === "dark" ? "light" : "dark");
+		setMode(mode === "dark" ? "light" : "dark");
 	}
 
 	useEffect(() => {
-		localStorage.setItem("carpatin:theme", theme);
-	}, [theme]);
-	return <DarkContext.Provider value={{ theme, setTheme, toggleTheme }}>{children}</DarkContext.Provider>;
+		localStorage.setItem("carpatin:theme", mode);
+	}, [mode]);
+	return <DarkContext.Provider value={{ mode, setMode, toggleTheme, theme }}>{children}</DarkContext.Provider>;
 };
 
 export function useThemeContext() {
