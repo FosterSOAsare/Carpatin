@@ -11,6 +11,9 @@ export let darkColors = {
 	background2: {
 		main: "#0A0F18",
 	},
+	stroke: {
+		main: "#1D2939",
+	},
 	primary: {
 		main: "#FFFFFF",
 	},
@@ -49,5 +52,8 @@ export let lightColors = {
 	},
 	ticks: {
 		main: "#10B981",
+	},
+	stroke: {
+		main: "#F2F4F7",
 	},
 };

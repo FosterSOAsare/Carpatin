@@ -5,3 +5,11 @@
 	box-sizing: border-box;
 	font-family: "Inter", sans-serif !important;
 }
+
+.heroImage {
+	width: 50%;
+}
+
+.pros__image {
+	margin-left: 20px;
+}
