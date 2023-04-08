@@ -26,7 +26,7 @@ const featuresStyles = {
 	},
 	feature__container: {
 		width: "80%",
-		height: "500px",
+		height: "auto",
 		...flex("space-between", "center"),
 		gap: "30px",
 		paddingBottom: "50px",

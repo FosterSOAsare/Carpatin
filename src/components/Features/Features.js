@@ -9,6 +9,8 @@ import Feature from "./Feature";
 import AuthImage from "../../assets/images/home-features-auth.png";
 import LoadingState from "../../assets/images/home-features-states.png";
 import Filters from "../../assets/images/home-features-filters.png";
+import { ReactComponent as UpdatesSvg } from "../../assets/images/updates.svg";
+import { ReactComponent as ResponsiveSvg } from "../../assets/images/responsive.svg";
 
 const Features = () => {
 	const { theme } = useThemeContext();
@@ -50,6 +52,36 @@ const Features = () => {
 				].map((e, index) => (
 					<Feature key={index} {...e} theme={theme} />
 				))}
+			</Box>
+			<Box sx={{ ...styles.feature__container, paddingTop: "50px", borderColor: theme.palette.stroke.main }}>
+				<Box sx={{ display: "flex", gap: "20px", justifyContent: "space-between" }}>
+					{[
+						{
+							icon: UpdatesSvg,
+							iconBg: "rgb(247, 144, 9)",
+							title: "Loading and Error states",
+							desc: "Screens come connected to a fake server api client and state management system, and can be hooked to your real server in no time.",
+						},
+						{
+							icon: ResponsiveSvg,
+							iconBg: "rgb(16, 185, 129)",
+							title: "Advanced Features",
+							desc: "When it comes to management, it’s important to have good tools for specific needs, so we included a powerful filter system so you won’t have to build one.",
+						},
+					].map((e, index) => (
+						<Box key={index} {...e} sx={{ width: "50%", borderRight: index === 0 ? `1px solid ${theme.palette.stroke.main} ` : "", paddingBlock: "10px" }}>
+							<Box sx={{ width: "60px", height: "60px", background: e.iconBg, borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+								<e.icon style={{ height: "30px", color: "white" }} />
+							</Box>
+							<Typography variant="h3" sx={{ ...styles.title, color: theme.palette.primary.main, fontSize: "24px", marginBlock: "15px" }}>
+								{e.title}
+							</Typography>
+							<Typography variant="p" sx={{ ...styles.title, color: theme.palette.desc.main, fontSize: "14px" }}>
+								{e.desc}
+							</Typography>
+						</Box>
+					))}
+				</Box>
 			</Box>
 		</Box>
 	);
