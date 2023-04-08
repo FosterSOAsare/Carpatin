@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Pros from "./components/Pros/Pros";
+import Features from "./components/Features/Features";
 
 function App() {
 	const { theme } = useThemeContext();
@@ -14,6 +15,7 @@ function App() {
 				<Header />
 				<Hero />
 				<Pros />
+				<Features />
 			</Box>
 		</ThemeProvider>
 	);

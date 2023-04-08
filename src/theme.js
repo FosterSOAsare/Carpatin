@@ -11,6 +11,9 @@ export let darkColors = {
 	background2: {
 		main: "#0A0F18",
 	},
+	background3: {
+		main: "#101828",
+	},
 	stroke: {
 		main: "#1D2939",
 	},
