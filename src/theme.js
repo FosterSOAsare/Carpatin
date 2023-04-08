@@ -29,6 +29,9 @@ export let darkColors = {
 	ticks: {
 		main: "#10B981",
 	},
+	tags: {
+		main: "#98a2b31f",
+	},
 };
 
 export let lightColors = {
@@ -58,5 +61,8 @@ export let lightColors = {
 	},
 	stroke: {
 		main: "#F2F4F7",
+	},
+	tags: {
+		main: "#1018281f",
 	},
 };
