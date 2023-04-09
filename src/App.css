@@ -10,6 +10,12 @@
 	width: 50%;
 }
 
+@media screen and (max-width: 900px) {
+	.heroImage {
+		width: 90%;
+	}
+}
+
 .pros__image {
 	margin-left: 20px;
 }

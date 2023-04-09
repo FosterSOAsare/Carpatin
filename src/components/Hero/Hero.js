@@ -9,7 +9,7 @@ const Hero = () => {
 	return (
 		<Box sx={styles.hero}>
 			<Typography variant="h1" sx={styles.hero__heading} color="primary">
-				Meet Carpatin - Admin Dashboard
+				Meet Carpatin - <br /> Admin Dashboard
 			</Typography>
 			<Typography variant="p" sx={{ ...styles.hero__description, color: theme.palette.desc.main }}>
 				Carpatin is a professionally crafted admin dashboard for everyday product development with MUI components.
