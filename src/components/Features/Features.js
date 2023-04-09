@@ -16,7 +16,7 @@ const Features = () => {
 	const { theme } = useThemeContext();
 	return (
 		<Box sx={{ ...styles.features }}>
-			<Typography variant="h1" sx={styles.features__heading}>
+			<Typography variant="h1" sx={styles.features__heading} color="primary">
 				Packed with features
 			</Typography>
 			<Typography variant="p" sx={{ ...styles.features__description, color: theme.palette.desc.main }}>
@@ -28,7 +28,7 @@ const Features = () => {
 					<img src={AuthImage} alt="" className="authImage" />
 				</Box>
 				<Box>
-					<Typography variant="h3" sx={{ ...styles.features__heading, fontSize: "24px" }}>
+					<Typography variant="h3" sx={{ ...styles.features__heading, fontSize: "24px" }} color="primary">
 						Authentication
 					</Typography>
 					<Typography variant="p" sx={{ ...styles.features__description, color: theme.palette.desc.main }}>

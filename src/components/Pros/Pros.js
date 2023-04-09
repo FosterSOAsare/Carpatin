@@ -10,7 +10,7 @@ const Pros = () => {
 		<Box sx={styles.pros}>
 			<Container maxWidth="lg" sx={{ ...styles.pros__container, borderColor: theme.palette.stroke.main }}>
 				<Box sx={styles.pros__section}>
-					<Typography variant="h3" sx={styles.pros__heading}>
+					<Typography variant="h3" sx={styles.pros__heading} color="primary">
 						Design Files
 					</Typography>
 					<Typography variant="p" sx={{ ...styles.pros__description, color: theme.palette.desc.main }}>
@@ -29,7 +29,7 @@ const Pros = () => {
 				</Box>
 				<Box sx={{ ...styles.pros__stroke, background: theme.palette.stroke.main }}></Box>
 				<Box sx={styles.pros__section}>
-					<Typography variant="h3" sx={styles.pros__heading}>
+					<Typography variant="h3" sx={styles.pros__heading} color="primary">
 						Premium Support
 					</Typography>
 					<Typography variant="p" sx={{ ...styles.pros__description, color: theme.palette.desc.main }}>

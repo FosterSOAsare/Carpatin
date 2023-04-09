@@ -23,7 +23,6 @@ const prosStyle = {
 		width: "100%",
 	},
 	pros__heading: {
-		color: "white",
 		fontSize: "24px",
 		fontWeight: "bold",
 		marginBottom: "10px",

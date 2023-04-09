@@ -9,10 +9,10 @@ const headerStyles = {
 		padding: "5px 10px",
 		borderRadius: "7px",
 
-		// "&:hover": {
-		// 	cursor: "pointer",
-		// 	backgroundColor: "rgb(10, 15, 24)",
-		// },
+		"&:hover": {
+			cursor: "pointer",
+			// backgroundColor: "rgb(10, 15, 24)",
+		},
 	},
 	header__navigations: { ...flex("flex-start", "center"), gap: "10px", marginLeft: "240px" },
 	header__icon: {

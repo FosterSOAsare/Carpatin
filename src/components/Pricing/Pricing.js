@@ -28,7 +28,7 @@ const Pricing = () => {
 
 							<Box sx={{ width: "95%", marginInline: "auto", paddingBottom: "10px", borderBottom: `1px solid ${theme.palette.stroke.main}` }}>
 								{pricings.features.map((feature, index) => (
-									<Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: "10px", marginBottom: "25px" }}>
+									<Box key={index} sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: "10px", marginBottom: "25px" }}>
 										<Box
 											sx={{
 												width: "15px",
@@ -41,12 +41,12 @@ const Pricing = () => {
 												justifyContent: "center",
 											}}>
 											{pricings.values[pricing_index].index_value[index] === 1 ? (
-												<DoneTwoToneIcon sx={{ fontSize: "10px" }} />
+												<DoneTwoToneIcon sx={{ fontSize: "10px" }} color="primary" />
 											) : (
 												<CloseTwoToneIcon sx={{ fontSize: "10px" }} color="stroke" />
 											)}
 										</Box>
-										<Typography variant="p" sx={{ fontWeight: "medium" }} color="primary">
+										<Typography variant="p" sx={{ fontWeight: "medium", opacity: "0.5" }} color="primary">
 											{feature}
 										</Typography>
 									</Box>
@@ -66,7 +66,7 @@ const Pricing = () => {
 				<Typography variant="p" sx={{ fontSize: "16px", display: "block", marginBlock: "20px", color: theme.palette.desc.main }} color="desc">
 					Let’s talk about your specific requirements and see how we can help you.
 				</Typography>
-				<Button variant="contained" href="https://devias.io/contact" color="secondary" sx={{ textTransform: "none", color: theme.palette.primary.main, fontWeight: "500" }}>
+				<Button variant="contained" href="https://devias.io/contact" color="secondary" sx={{ textTransform: "none", color: "white", fontWeight: "500" }}>
 					Contact us
 				</Button>
 			</Container>

@@ -20,7 +20,7 @@ const Demo = () => {
 							key={index}
 							sx={{
 								borderRadius: "5px",
-								width: "33.33%",
+								width: "35%",
 								padding: "20px",
 								background: theme.palette.background3.main,
 								boxShadow: "rgba(0, 0, 0, 0.24) 0px 10px 15px",
@@ -37,7 +37,7 @@ const Demo = () => {
 
 							<Box sx={{ width: "95%", height: "280px", marginInline: "auto", paddingBottom: "10px", borderBottom: `1px solid ${theme.palette.stroke.main}` }}>
 								{plan.features.map((feature, index) => (
-									<Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: "10px", marginBottom: "25px" }}>
+									<Box key={index} sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: "10px", marginBottom: "25px" }}>
 										<Box
 											sx={{
 												width: "15px",
@@ -48,9 +48,9 @@ const Demo = () => {
 												alignItems: "center",
 												justifyContent: "center",
 											}}>
-											<DoneTwoToneIcon sx={{ fontSize: "10px" }} />
+											<DoneTwoToneIcon sx={{ fontSize: "10px" }} color="primary" />
 										</Box>
-										<Typography variant="p" sx={{ fontWeight: "medium", width: "calc(100% - 15px)" }} color="primary">
+										<Typography variant="p" sx={{ fontWeight: "medium", width: "calc(100% - 15px)", fontSize: "14px" }} color="primary">
 											{feature}
 										</Typography>
 									</Box>

@@ -42,9 +42,11 @@ export let lightColors = {
 		main: "#12B76A",
 	},
 	background2: {
-		main: "#0A0F18",
+		main: "#fcfcfd",
 	},
-	background3: { main: "#fcfcfd" },
+	background3: {
+		main: "#fcfcfd",
+	},
 	primary: {
 		main: "#000000",
 	},
@@ -61,7 +63,7 @@ export let lightColors = {
 		main: "#10B981",
 	},
 	stroke: {
-		main: "#F2F4F7",
+		main: "#10182861",
 	},
 	tags: {
 		main: "#1018281f",

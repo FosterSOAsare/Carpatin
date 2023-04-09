@@ -18,3 +18,31 @@
 	width: 100%;
 	height: 100%;
 }
+.footer_link {
+	text-decoration: none;
+	font-size: 14px;
+}
+.footer_link:hover {
+	text-decoration: underline;
+}
+
+.faq__answer {
+	font-size: 13px;
+	margin-bottom: 20px !important;
+	display: block;
+	line-height: 25px;
+}
+.faq_answer_dark .faq__answer {
+	color: #ffffff;
+}
+.faq_answer_light .faq__answer {
+	color: #000000;
+}
+.faq__answer a {
+	text-decoration: none;
+	color: #12b76a;
+}
+
+.faq__answer a:hover {
+	text-decoration: underline;
+}

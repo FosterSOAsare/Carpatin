@@ -9,12 +9,14 @@ import Features from "./components/Features/Features";
 import UserFlows from "./components/UserFlows/UserFlows";
 import Pricing from "./components/Pricing/Pricing";
 import Demo from "./components/Demo/Demo";
+import Faq from "./components/Faq/Faq";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	const { theme } = useThemeContext();
 	return (
 		<ThemeProvider theme={theme}>
-			<Box className="App" sx={{ flexGrow: 1, paddingTop: "60px", backgroundColor: theme.palette.background.main, paddingBottom: "1000px" }}>
+			<Box className="App" sx={{ flexGrow: 1, paddingTop: "60px", backgroundColor: theme.palette.background.main }}>
 				<Header />
 				<Hero />
 				<Pros />
@@ -22,6 +24,8 @@ function App() {
 				<UserFlows />
 				<Demo />
 				<Pricing />
+				<Faq />
+				<Footer />
 			</Box>
 		</ThemeProvider>
 	);

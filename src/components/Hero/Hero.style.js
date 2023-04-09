@@ -8,7 +8,6 @@ const heroStyles = {
 		paddingBlock: "70px",
 	},
 	hero__heading: {
-		color: "white",
 		fontSize: "60px",
 		fontWeight: "bold",
 		textAlign: "center",

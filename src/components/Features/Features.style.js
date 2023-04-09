@@ -8,7 +8,6 @@ const featuresStyles = {
 		paddingBlock: "20px",
 	},
 	features__heading: {
-		color: "white",
 		fontSize: "36px",
 		fontWeight: "bold",
 		marginBottom: "20px",
