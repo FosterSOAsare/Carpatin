@@ -7,6 +7,8 @@ import Hero from "./components/Hero/Hero";
 import Pros from "./components/Pros/Pros";
 import Features from "./components/Features/Features";
 import UserFlows from "./components/UserFlows/UserFlows";
+import Pricing from "./components/Pricing/Pricing";
+import Demo from "./components/Demo/Demo";
 
 function App() {
 	const { theme } = useThemeContext();
@@ -18,6 +20,8 @@ function App() {
 				<Pros />
 				<Features />
 				<UserFlows />
+				<Demo />
+				<Pricing />
 			</Box>
 		</ThemeProvider>
 	);

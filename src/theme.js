@@ -44,6 +44,7 @@ export let lightColors = {
 	background2: {
 		main: "#0A0F18",
 	},
+	background3: { main: "#fcfcfd" },
 	primary: {
 		main: "#000000",
 	},
