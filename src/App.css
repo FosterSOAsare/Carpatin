@@ -57,3 +57,9 @@ body {
 .faq__answer a:hover {
 	text-decoration: underline;
 }
+
+button {
+	background: none;
+	border: none;
+	padding: 5px;
+}
