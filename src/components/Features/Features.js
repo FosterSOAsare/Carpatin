@@ -24,10 +24,10 @@ const Features = () => {
 			</Typography>
 
 			<Box sx={{ ...styles.features__auth, backgroundColor: theme.palette.background3.main }}>
-				<Box sx={{ width: "45%", height: "100%" }}>
-					<img src={AuthImage} alt="" className="authImage" />
+				<Box sx={{ width: { xs: "100%", md: "35%" }, height: { xs: "100%", md: "200px" } }}>
+					<img src={AuthImage} alt="" className="authImage" style={{ width: "100%", height: "100%" }} />
 				</Box>
-				<Box>
+				<Box sx={{ width: { xs: "100%", md: "65%" }, height: "100%" }}>
 					<Typography variant="h3" sx={{ ...styles.features__heading, fontSize: "24px" }} color="primary">
 						Authentication
 					</Typography>
@@ -54,7 +54,7 @@ const Features = () => {
 				))}
 			</Box>
 			<Box sx={{ ...styles.feature__container, paddingBlock: "90px", border: 0 }}>
-				<Box sx={{ display: "flex", gap: "20px", justifyContent: "space-between" }}>
+				<Box sx={{ display: "flex", gap: "20px", justifyContent: "space-between", flexDirection: { xs: "column", md: "row" } }}>
 					{[
 						{
 							icon: UpdatesSvg,
@@ -69,7 +69,7 @@ const Features = () => {
 							desc: "When it comes to management, it’s important to have good tools for specific needs, so we included a powerful filter system so you won’t have to build one.",
 						},
 					].map((e, index) => (
-						<Box key={index} {...e} sx={{ width: "50%", borderRight: index === 0 ? `1px solid ${theme.palette.stroke.main} ` : "", paddingBlock: "10px" }}>
+						<Box key={index} {...e} sx={{ width: { xs: "100%", md: "50%" }, borderRight: { md: index === 0 ? `1px solid ${theme.palette.stroke.main} ` : "" }, paddingBlock: "10px" }}>
 							<Box sx={{ width: "60px", height: "60px", background: e.iconbg, borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center" }}>
 								<e.icon style={{ height: "30px", color: "white" }} />
 							</Box>

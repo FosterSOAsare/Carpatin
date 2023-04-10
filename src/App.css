@@ -6,6 +6,11 @@
 	font-family: "Inter", sans-serif !important;
 }
 
+body {
+	width: 100vw;
+	height: auto;
+	overflow-x: hidden;
+}
 .heroImage {
 	width: 50%;
 }

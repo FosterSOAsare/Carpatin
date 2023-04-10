@@ -16,7 +16,7 @@ function App() {
 	const { theme } = useThemeContext();
 	return (
 		<ThemeProvider theme={theme}>
-			<Box className="App" sx={{ flexGrow: 1, paddingTop: "60px", backgroundColor: theme.palette.background.main }}>
+			<Box className="App" sx={{ backgroundColor: theme.palette.background.main, paddingTop: "70px", overflow: "hidden !important", height: "auto", width: "100vw" }}>
 				<Header />
 				<Hero />
 				<Pros />
