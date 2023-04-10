@@ -14,13 +14,13 @@ const Demo = () => {
 				<Typography variant="h1" sx={{ textAlign: "center", fontSize: "36px", marginBottom: "40px", fontWeight: "600" }} color="primary">
 					Try the free demo
 				</Typography>
-				<Box sx={{ display: "flex", gap: "20px", width: "100%", justifyContent: "center", marginBottom: "50px" }}>
+				<Box sx={{ display: "flex", gap: "20px", width: "100%", justifyContent: "center", marginBottom: "50px", flexDirection: { xs: "column", sm: "row" } }}>
 					{plans.map((plan, index) => (
 						<Box
 							key={index}
 							sx={{
 								borderRadius: "5px",
-								width: "35%",
+								width: { xs: "100%", sm: "50%", md: "35%" },
 								padding: "20px",
 								background: theme.palette.background3.main,
 								boxShadow: "rgba(0, 0, 0, 0.24) 0px 10px 15px",

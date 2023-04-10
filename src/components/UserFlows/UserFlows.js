@@ -9,8 +9,8 @@ const UserFlows = () => {
 
 	return (
 		<Box sx={{ width: "100%", height: "auto", background: theme.palette.background3.main, paddingBlock: "50px" }}>
-			<Container maxWidth="lg" sx={{ display: "flex", alignItems: "center", height: "auto" }}>
-				<Box sx={{ width: "50%", height: "auto" }}>
+			<Container maxWidth="lg" sx={{ display: "flex", alignItems: "center", height: "auto", flexDirection: { xs: "column", md: "row" } }}>
+				<Box sx={{ width: { xs: "100%", md: "50%" }, height: "auto" }}>
 					<Typography variant="h1" color="primary" sx={{ fontSize: "36px", fontWeight: "600", marginBottom: "30px" }}>
 						Management User Flows
 					</Typography>
@@ -33,8 +33,8 @@ const UserFlows = () => {
 						</Button>
 					</Box>
 				</Box>
-				<Box sx={{ width: "50%", height: "400px" }}>
-					<img src={HomeFlows} alt="Home flows" style={{ width: "100%", height: "100%" }} />
+				<Box sx={{ width: { xs: "100%", md: "50%" }, height: "400px", marginTop: { xs: "40px", md: 0 } }}>
+					<img src={HomeFlows} alt="Home flows" style={{ width: "100%", height: "100%", left: { xs: "-10%", md: 0 }, position: "relative" }} />
 				</Box>
 			</Container>
 		</Box>
