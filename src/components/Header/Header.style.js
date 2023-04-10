@@ -8,6 +8,7 @@ const headerStyles = {
 		fontWeight: "500",
 		padding: "5px 10px",
 		borderRadius: "7px",
+		textTransform: "none",
 
 		"&:hover": {
 			cursor: "pointer",

@@ -62,7 +62,7 @@ const PhoneMenu = ({ setShowMenu, showMenu }) => {
 
 				<Box sx={{ width: "100%", height: "auto", padding: "0 10px" }}>
 					{navigationData.map((categories, index) => (
-						<Box Fragment key={index} sx={{ ...styles.Accordion }}>
+						<Box key={index} sx={{ ...styles.Accordion }}>
 							{categories.map((category, index) => {
 								return (
 									<Accordion key={index} sx={{}}>
