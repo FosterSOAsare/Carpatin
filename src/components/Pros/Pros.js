@@ -3,6 +3,13 @@ import { Box, Container, Typography, Button, Avatar, AvatarGroup } from "@mui/ma
 import styles from "../../styles";
 import { useThemeContext } from "../../context/DarkTheme";
 
+import { ReactComponent as FigmaSvg } from "../../assets/images/logo-figma.svg";
+import { ReactComponent as ReactSvg } from "../../assets/images/logo-react.svg";
+import { ReactComponent as TypescriptSvg } from "../../assets/images/logo-typescript.svg";
+import SupportAdrian from "../../assets/images/support-adrian.png";
+import SupportAlexandru from "../../assets/images/support-alexandru.png";
+import SupportStefania from "../../assets/images/support-stefania.png";
+
 const Pros = () => {
 	const { theme } = useThemeContext();
 
@@ -21,9 +28,9 @@ const Pros = () => {
 							Preview Figma Files
 						</Button>
 						<Box sx={styles.pros__icons}>
-							<img src="https://carpatin-dashboard.demos.devias.io/assets/logos/logo-react.svg" alt="" className="pros__image" />
-							<img src="https://carpatin-dashboard.demos.devias.io/assets/logos/logo-typescript.svg" alt="" className="pros__image" />
-							<img src="https://carpatin-dashboard.demos.devias.io/assets/logos/logo-figma.svg" alt="" className="pros__image" />
+							<ReactSvg />
+							<TypescriptSvg />
+							<FigmaSvg />
 						</Box>
 					</Box>
 				</Box>
@@ -40,13 +47,9 @@ const Pros = () => {
 							Contact us
 						</Button>
 						<AvatarGroup max={4}>
-							<Avatar alt="Remy Sharp" src="https://carpatin-dashboard.demos.devias.io/assets/support-stefania.png" sx={{ borderColor: `${theme.palette.background.main} !important` }} />
-							<Avatar
-								alt="Travis Howard"
-								src="https://carpatin-dashboard.demos.devias.io/assets/support-alexandru.png"
-								sx={{ borderColor: `${theme.palette.background.main} !important` }}
-							/>
-							<Avatar alt="Cindy Baker" src="https://carpatin-dashboard.demos.devias.io/assets/support-adrian.png" sx={{ borderColor: `${theme.palette.background.main} !important` }} />
+							<Avatar alt="Remy Sharp" src={SupportStefania} sx={{ borderColor: `${theme.palette.background.main} !important` }} />
+							<Avatar alt="Travis Howard" src={SupportAlexandru} sx={{ borderColor: `${theme.palette.background.main} !important` }} />
+							<Avatar alt="Cindy Baker" src={SupportAdrian} sx={{ borderColor: `${theme.palette.background.main} !important` }} />
 						</AvatarGroup>
 					</Box>
 				</Box>

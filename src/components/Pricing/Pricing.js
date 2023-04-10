@@ -14,11 +14,17 @@ const Pricing = () => {
 				<Typography variant="h1" sx={{ textAlign: "center", fontSize: "36px", marginBottom: "40px", fontWeight: "600" }} color="primary">
 					Pricing
 				</Typography>
-				<Box sx={{ display: "flex", gap: "20px", width: "100%", justifyContent: "space-between", marginBottom: "50px" }}>
+				<Box sx={{ display: "flex", gap: "20px", width: "100%", justifyContent: "space-between", marginBottom: "50px", flexDirection: { xs: "column", md: "row" }, alignItems: "center" }}>
 					{pricings.values.map((pricing, pricing_index) => (
 						<Box
 							key={pricing_index}
-							sx={{ borderRadius: "5px", width: "33.33%", padding: "20px", background: theme.palette.background3.main, boxShadow: "rgba(0, 0, 0, 0.24) 0px 10px 15px" }}>
+							sx={{
+								borderRadius: "5px",
+								width: { xs: "100%", sm: "80%", md: "33.33%" },
+								padding: "20px",
+								background: theme.palette.background3.main,
+								boxShadow: "rgba(0, 0, 0, 0.24) 0px 10px 15px",
+							}}>
 							<Typography variant="h3" sx={{ fontSize: "12px", fontWeight: "bold", marginBottom: "10px", color: theme.palette.desc.main }}>
 								LICENSE
 							</Typography>
