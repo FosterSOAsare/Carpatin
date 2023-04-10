@@ -20,6 +20,28 @@ const styles = {
 	...heroStyles,
 	...prosStyle,
 	...featuresStyles,
+	Accordion: {
+		backgroundColor: "none",
+		"& .MuiPaper-root::before": {
+			display: "none",
+		},
+		"& .MuiAccordion-root": {
+			background: "transparent",
+			boxShadow: "none",
+			padding: 0,
+		},
+		"& .MuiAccordionSummary-root": {
+			padding: "0 10px",
+			marginBottom: "5px",
+			border: "none",
+			borderRadius: "5px",
+			minHeight: "30px",
+			height: "35px",
+			"&:hover": {
+				background: "rgba(255, 255, 255, 0.04)",
+			},
+		},
+	},
 };
 
 export default styles;
