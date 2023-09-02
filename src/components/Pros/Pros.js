@@ -24,7 +24,7 @@ const Pros = () => {
 						We've included the source Figma files in Plus & Extended licenses so you can get creative! Build layouts with confidence.
 					</Typography>
 					<Box sx={styles.pros__ctas}>
-						<Button variant="text" color="secondary" sx={{ textTransform: "none" }}>
+						<Button variant="text" color="secondary" sx={{ textTransform: "none" }} href="https://www.figma.com/file/xEAerPeQsTKImIS28QulSh">
 							Preview Figma Files
 						</Button>
 						<Box sx={styles.pros__icons}>
@@ -43,7 +43,7 @@ const Pros = () => {
 						Our support team is here to help you get started with any template-related questions. We answer pretty fast.
 					</Typography>
 					<Box sx={styles.pros__ctas}>
-						<Button variant="text" color="secondary" sx={{ textTransform: "none" }}>
+						<Button variant="text" color="secondary" sx={{ textTransform: "none" }} href="https://devias.io/contact">
 							Contact us
 						</Button>
 						<AvatarGroup max={4}>

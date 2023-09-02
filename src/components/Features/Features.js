@@ -16,7 +16,7 @@ const Features = () => {
 	const { theme } = useThemeContext();
 	return (
 		<Box sx={{ ...styles.features }}>
-			<Typography variant="h1" sx={styles.features__heading} color="primary">
+			<Typography variant="h2" sx={styles.features__heading} color="primary">
 				Packed with features
 			</Typography>
 			<Typography variant="p" sx={{ ...styles.features__description, color: theme.palette.desc.main }}>
@@ -24,7 +24,7 @@ const Features = () => {
 			</Typography>
 
 			<Box sx={{ ...styles.features__auth, backgroundColor: theme.palette.background3.main }}>
-				<Box sx={{ width: { xs: "100%", md: "35%" }, height: { xs: "100%", md: "200px" } }}>
+				<Box sx={{ width: { xs: "100%", sm: "80%", md: "35%" }, marginRight: { sm: "auto", md: "0px" }, height: { xs: "100%", md: "200px" } }}>
 					<img src={AuthImage} alt="" className="authImage" style={{ width: "100%", height: "100%" }} />
 				</Box>
 				<Box sx={{ width: { xs: "100%", md: "65%" }, height: "100%" }}>
@@ -53,7 +53,7 @@ const Features = () => {
 					<Feature key={index} {...e} theme={theme} />
 				))}
 			</Box>
-			<Box sx={{ ...styles.feature__container, paddingBlock: "90px", border: 0 }}>
+			<Box sx={{ ...styles.feature__container, paddingBlock: { xs: "20px", md: "90px" }, border: 0 }}>
 				<Box sx={{ display: "flex", gap: "20px", justifyContent: "space-between", flexDirection: { xs: "column", md: "row" } }}>
 					{[
 						{

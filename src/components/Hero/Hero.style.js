@@ -4,8 +4,8 @@ const heroStyles = {
 		...flex("flex-start", "center", "column"),
 		width: "100%",
 		height: "auto",
-		minHeight: "700px",
-		paddingBlock: "70px",
+		minHeight: { md: "700px" },
+		paddingBlock: { xs: "40px", md: "70px" },
 	},
 	hero__heading: {
 		fontSize: { xs: "38px", md: "60px" },
@@ -23,7 +23,7 @@ const heroStyles = {
 	hero__ctas: {
 		...flex("center", "center"),
 		gap: "20px",
-		marginTop: "25px",
+		marginBlock: "25px 15px",
 	},
 	hero__cta: {
 		textTransform: "none",

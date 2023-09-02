@@ -18,6 +18,9 @@ const headerStyles = {
 	header__navigations: { ...flex("flex-start", "center"), gap: "10px", marginLeft: "240px" },
 	header__icon: {
 		fontSize: "16px",
+		"&:hover": {
+			cursor: "pointer",
+		},
 	},
 };
 export default headerStyles;

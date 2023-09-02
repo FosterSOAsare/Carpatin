@@ -9,7 +9,7 @@ import { useThemeContext } from "../../context/DarkTheme";
 const Demo = () => {
 	const { theme } = useThemeContext();
 	return (
-		<Box sx={{ width: "100%", height: "auto", background: theme.palette.background.main, paddingBlock: "70px" }}>
+		<Box sx={{ width: "100%", height: "auto", background: theme.palette.background.main, paddingBlock: { xs: "20px 0px", md: "70px" } }}>
 			<Container maxWidth="lg" sx={{ width: "100%", height: "auto", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
 				<Typography variant="h1" sx={{ textAlign: "center", fontSize: "36px", marginBottom: "40px", fontWeight: "600" }} color="primary">
 					Try the free demo
@@ -22,7 +22,6 @@ const Demo = () => {
 								borderRadius: "5px",
 								width: { xs: "100%", sm: "50%", md: "35%" },
 								padding: "20px",
-								background: theme.palette.background3.main,
 								boxShadow: "rgba(0, 0, 0, 0.24) 0px 10px 15px",
 								display: "flex",
 								flexDirection: "column",
@@ -35,7 +34,7 @@ const Demo = () => {
 								{plan.type}
 							</Typography>
 
-							<Box sx={{ width: "95%", height: "280px", marginInline: "auto", paddingBottom: "10px", borderBottom: `1px solid ${theme.palette.stroke.main}` }}>
+							<Box sx={{ width: "95%", height: { md: "280px" }, marginInline: "auto", paddingBottom: "10px", borderBottom: `1px solid ${theme.palette.stroke.main}` }}>
 								{plan.features.map((feature, index) => (
 									<Box key={index} sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: "10px", marginBottom: "25px" }}>
 										<Box

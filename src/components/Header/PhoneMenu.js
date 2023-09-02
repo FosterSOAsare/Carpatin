@@ -44,7 +44,7 @@ const PhoneMenu = ({ setShowMenu, showMenu }) => {
 				sx={{
 					width: "320px",
 					paddingBottom: "20px",
-					overflowY: "scroll",
+					overflowY: "auto",
 					height: "100%",
 					background: theme.palette.background.main,
 					position: "relative",

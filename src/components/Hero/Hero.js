@@ -15,10 +15,10 @@ const Hero = () => {
 				Carpatin is a professionally crafted admin dashboard for everyday product development with MUI components.
 			</Typography>
 			<Box sx={styles.hero__ctas}>
-				<Button variant="outlined" color="primary" sx={{ ...styles.hero__cta, color: theme.palette.primary.main }}>
+				<Button variant="outlined" color="primary" sx={{ ...styles.hero__cta, color: theme.palette.primary.main }} href="https://carpatin-dashboard.devias.io/dashboard">
 					Live Preview
 				</Button>
-				<Button variant="contained" color="secondary" sx={{ ...styles.hero__cta, color: "white" }}>
+				<Button variant="contained" color="secondary" sx={{ ...styles.hero__cta, color: "white" }} href="https://mui.com/store/items/carpatin-dashboard">
 					Purchase
 				</Button>
 			</Box>

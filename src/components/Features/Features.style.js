@@ -3,12 +3,12 @@ const featuresStyles = {
 	features: {
 		width: "100%",
 		height: "auto",
-		marginTop: "120px",
+		marginTop: { xs: "30px", md: "120px" },
 		...flex("flex-start", "center", "column"),
 		paddingBlock: "20px",
 	},
 	features__heading: {
-		fontSize: "36px",
+		fontSize: { xs: "28px", md: "36px" },
 		fontWeight: "bold",
 		marginBottom: "20px",
 	},

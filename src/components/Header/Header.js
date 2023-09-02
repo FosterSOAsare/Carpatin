@@ -60,10 +60,10 @@ const Header = ({ setShowMenu }) => {
 					)}
 					{!isMediumScreen && (
 						<Box sx={styles.header__ctas}>
-							<Button variant="outlined" sx={styles.button}>
+							<Button variant="outlined" sx={styles.button} href="https://carpatin-dashboard.devias.io/dashboard">
 								Live Preview
 							</Button>
-							<Button variant="contained" color="secondary" sx={styles.button}>
+							<Button variant="contained" color="secondary" sx={styles.button} href="https://mui.com/store/items/carpatin-dashboard">
 								Purchase
 							</Button>
 						</Box>
